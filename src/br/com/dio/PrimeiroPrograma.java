@@ -8,7 +8,7 @@ public class PrimeiroPrograma {
     public static void main(String[] args) {
         Gato gato = new Gato();
         System.out.println(gato);
-
+        Livro livro1 = new Livro("O problema dos 3 corpos", 300);
       /*  int a = 5;
         int b = 3;
 
@@ -18,9 +18,9 @@ public class PrimeiroPrograma {
 }
 class Livro {
     private String nome;
-    private String numpag;
+    private Integer numpag;
 
-    public Livro(String nome, String numpag) {
+    public Livro(String nome, int numpag) {
         this.nome = nome;
         this.numpag = numpag;
     }
@@ -33,11 +33,11 @@ class Livro {
         this.nome = nome;
     }
 
-    public String getNumpag() {
+    public Integer getNumpag() {
         return numpag;
     }
 
-    public void setNumpag(String numpag) {
+    public void setNumpag(Integer numpag) {
         this.numpag = numpag;
     }
 
